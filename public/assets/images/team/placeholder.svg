@@ -1,0 +1,7 @@
+<!-- Placeholder Team Member Image -->
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#E5E7EB"/>
+  <circle cx="100" cy="75" r="30" fill="#9CA3AF"/>
+  <rect x="60" y="120" width="80" height="60" rx="40" fill="#9CA3AF"/>
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">Team Member</text>
+</svg>

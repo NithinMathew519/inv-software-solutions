@@ -1,0 +1,143 @@
+<!-- Hero Section -->
+<section class="about-hero">
+  <div class="container">
+    <h1>About INV Software Solutions, LLC</h1>
+    <p>Empowering businesses through innovative software solutions</p>
+  </div>
+</section>
+
+<!-- Company Story -->
+<section class="company-story">
+  <div class="container">
+    <div class="story-content">
+      <div class="story-text">
+        <h2>Our Story</h2>
+        <p>
+          Founded in 2020, INV Software Solutions, LLC emerged from a passion for creating innovative
+          software solutions that make a real difference in businesses. What started as a small team
+          of dedicated developers has grown into a comprehensive software development company.
+        </p>
+        <p>
+          We believe that technology should be accessible, reliable, and tailored to meet the unique
+          needs of each business. Our mission is to bridge the gap between complex technical solutions
+          and practical business applications.
+        </p>
+        <p>
+          Today, we're proud to serve clients across various industries, helping them transform their
+          digital presence and achieve their business goals through cutting-edge software solutions.
+        </p>
+      </div>
+      <div class="story-image">
+        <div class="image-placeholder">
+          <span>Our Journey</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="mission-vision">
+  <div class="container">
+    <div class="mv-grid">
+      <div class="mv-card">
+        <h3>Our Mission</h3>
+        <p>
+          To deliver innovative, reliable, and scalable software solutions that empower businesses
+          to thrive in the digital age. We are committed to understanding our clients' unique needs
+          and providing personalized solutions that drive growth and success.
+        </p>
+      </div>
+      <div class="mv-card">
+        <h3>Our Vision</h3>
+        <p>
+          To be the leading software development partner for businesses seeking digital transformation.
+          We envision a future where technology seamlessly integrates with business processes,
+          creating efficiency, innovation, and competitive advantage.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="values-section">
+  <div class="container">
+    <h2>Our Values</h2>
+    <div class="values-grid">
+      <div class="value-card" *ngFor="let value of values">
+        <div class="value-icon">{{ value.icon }}</div>
+        <h3>{{ value.title }}</h3>
+        <p>{{ value.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+  <div class="container">
+    <h2>Meet Our Team</h2>
+    <p class="section-subtitle">The talented professionals behind our success</p>
+
+    <div class="team-grid">
+      <div class="team-member" *ngFor="let member of teamMembers">
+        <div class="member-image">
+          <div class="image-placeholder">
+            <span>{{ getInitials(member.name) }}</span>
+          </div>
+        </div>
+        <div class="member-info">
+          <h3>{{ member.name }}</h3>
+          <p class="position">{{ member.position }}</p>
+          <p class="bio">{{ member.bio }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card" *ngFor="let stat of stats">
+        <div class="stat-number">{{ stat.number }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-us">
+  <div class="container">
+    <h2>Why Choose INV Software Solutions?</h2>
+    <div class="reasons-grid">
+      <div class="reason-card">
+        <h3>Expert Team</h3>
+        <p>Our team consists of skilled developers, designers, and consultants with years of industry experience.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Proven Track Record</h3>
+        <p>We have successfully delivered 100+ projects across various industries and business sizes.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Cutting-Edge Technology</h3>
+        <p>We use the latest technologies and best practices to ensure your solution is future-proof.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Customer-Centric Approach</h3>
+        <p>We prioritize your needs and work closely with you throughout the development process.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Ongoing Support</h3>
+        <p>We provide continuous support and maintenance to ensure your software runs smoothly.</p>
+      </div>
+      <div class="reason-card">
+        <h3>Competitive Pricing</h3>
+        <p>We offer flexible pricing models to fit your budget without compromising on quality.</p>
+      </div>
+    </div>
+  </div>
+</section>

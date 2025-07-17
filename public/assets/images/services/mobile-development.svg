@@ -1,0 +1,12 @@
+<!-- Mobile App Development Service Icon -->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="8" width="24" height="48" rx="4" fill="#10B981" stroke="#059669" stroke-width="2"/>
+  <rect x="24" y="14" width="16" height="32" fill="#D1FAE5"/>
+  <circle cx="32" cy="50" r="2" fill="#059669"/>
+  <rect x="28" y="10" width="8" height="2" rx="1" fill="#059669"/>
+  <rect x="26" y="18" width="4" height="2" fill="#10B981"/>
+  <rect x="26" y="22" width="6" height="2" fill="#6B7280"/>
+  <rect x="26" y="26" width="8" height="2" fill="#6B7280"/>
+  <rect x="26" y="30" width="4" height="2" fill="#6B7280"/>
+  <rect x="26" y="34" width="6" height="2" fill="#6B7280"/>
+</svg>

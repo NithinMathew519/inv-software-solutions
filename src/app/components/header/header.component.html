@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <div class="container-custom">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="nav-logo">
+          <img src="/assets/images/Logo/Logo.png" alt="INV Software Solutions" class="logo">
+        </a>
+        <div class="company-name">
+          <h1>INV Software Solutions</h1>
+          <span class="tagline">Innovation • Quality • Excellence</span>
+        </div>
+      </div>
+
+      <div class="nav-menu" [class.active]="isMobileMenuOpen">
+        <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a routerLink="/services" class="nav-link" routerLinkActive="active">Services</a>
+        <a routerLink="/about" class="nav-link" routerLinkActive="active">About Us</a>
+        <a routerLink="/careers" class="nav-link" routerLinkActive="active">Careers</a>
+        <a routerLink="/contact" class="nav-link" routerLinkActive="active">Contact</a>
+      </div>
+
+      <div class="nav-toggle" (click)="toggleMobileMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </div>
+</nav>

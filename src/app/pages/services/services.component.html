@@ -1,0 +1,296 @@
+<!-- Hero Section -->
+<section class="services-hero">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p>Comprehensive software solutions to transform your business</p>
+  </div>
+</section>
+
+<!-- Services Grid -->
+<section class="services-section">
+  <div class="container">
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services">
+        <div class="service-header">
+          <div class="service-icon">{{ service.icon }}</div>
+          <h3>{{ service.title }}</h3>
+        </div>
+        <p class="service-description">{{ service.description }}</p>
+        <ul class="service-features">
+          <li *ngFor="let feature of service.features">{{ feature }}</li>
+        </ul>
+        <button class="btn btn-primary" routerLink="/contact">Get Quote</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+  <div class="container">
+    <h2>Our Development Process</h2>
+    <p class="section-subtitle">How we bring your ideas to life</p>
+
+    <div class="process-grid">
+      <div class="process-card" *ngFor="let step of process">
+        <div class="process-number">{{ step.step }}</div>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Technologies Section -->
+<section class="technologies-section">
+  <div class="container">
+    <h2>Technologies We Use</h2>
+    <p class="section-subtitle">Modern tools and frameworks that power our solutions</p>
+    <div class="tech-categories">
+      <div class="tech-category">
+        <h3>Frontend</h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" loading="lazy">
+            </div>
+            <span class="tech-name">Angular</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy">
+            </div>
+            <span class="tech-name">React</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://vuejs.org/images/logo.png" alt="Vue.js" loading="lazy">
+            </div>
+            <span class="tech-name">Vue.js</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy">
+            </div>
+            <span class="tech-name">TypeScript</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+            </div>
+            <span class="tech-name">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3>Backend</h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://nodejs.org/static/images/logo.svg" alt="Node.js" loading="lazy">
+            </div>
+            <span class="tech-name">Node.js</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Python" loading="lazy">
+            </div>
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy">
+            </div>
+            <span class="tech-name">Java</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".NET" loading="lazy">
+            </div>
+            <span class="tech-name">.NET</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" loading="lazy">
+            </div>
+            <span class="tech-name">Spring</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" loading="lazy">
+            </div>
+            <span class="tech-name">C</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy">
+            </div>
+            <span class="tech-name">C++</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" loading="lazy">
+            </div>
+            <span class="tech-name">C#</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" loading="lazy">
+            </div>
+            <span class="tech-name">Flask</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3>Database</h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL" loading="lazy">
+            </div>
+            <span class="tech-name">MySQL</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg" alt="PostgreSQL" loading="lazy">
+            </div>
+            <span class="tech-name">PostgreSQL</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="MongoDB" loading="lazy">
+            </div>
+            <span class="tech-name">MongoDB</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" loading="lazy">
+            </div>
+            <span class="tech-name">Redis</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" loading="lazy">
+            </div>
+            <span class="tech-name">Oracle</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" loading="lazy">
+            </div>
+            <span class="tech-name">SQLite</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3>Cloud & DevOps</h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" loading="lazy">
+            </div>
+            <span class="tech-name">AWS</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://swimburger.net/media/ppnn3pcl/azure.png" alt="Azure" loading="lazy">
+            </div>
+            <span class="tech-name">Azure</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cloud.google.com/_static/cloud/images/cloud-logo.svg" alt="Google Cloud" loading="lazy">
+            </div>
+            <span class="tech-name">Google Cloud</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" alt="Docker" loading="lazy">
+            </div>
+            <span class="tech-name">Docker</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" loading="lazy">
+            </div>
+            <span class="tech-name">Kubernetes</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Kafka" loading="lazy">
+            </div>
+            <span class="tech-name">Kafka</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" loading="lazy">
+            </div>
+            <span class="tech-name">Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3>Tools & Frameworks</h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy">
+            </div>
+            <span class="tech-name">Git</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate" loading="lazy">
+            </div>
+            <span class="tech-name">Hibernate</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://www.elastic.co/static-res/images/elastic-logo-200.png" alt="Elasticsearch" loading="lazy">
+            </div>
+            <span class="tech-name">Elasticsearch</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" loading="lazy">
+            </div>
+            <span class="tech-name">WordPress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-category">
+        <h3>Methodologies</h3>
+        <div class="tech-items">
+          <div class="tech-item">
+            <div class="tech-logo">
+              <div class="agile-logo">
+                <span>🏃‍♂️</span>
+              </div>
+            </div>
+            <span class="tech-name">Agile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-footer">
+      <p class="tech-more">...and more other Latest Technologies</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Get Started?</h2>
+      <p>Let's discuss your project requirements and create a solution that fits your needs.</p>
+      <button class="btn btn-primary" routerLink="/contact">Contact Us Today</button>
+    </div>
+  </div>
+</section>

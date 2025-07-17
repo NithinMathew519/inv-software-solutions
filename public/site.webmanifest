@@ -1,0 +1,21 @@
+{
+  "name": "INV Software Solutions",
+  "short_name": "INV Software",
+  "description": "Custom software development, web development, mobile app development, and cloud solutions",
+  "icons": [
+    {
+      "src": "assets/images/Logo/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/Logo/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

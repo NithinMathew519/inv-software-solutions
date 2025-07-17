@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .logo-container {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .dark-container {
+            background: #1f2937;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .logo-img {
+            height: 50px;
+            display: block;
+            margin: 10px 0;
+        }
+        .dark-text {
+            color: #d1d5db;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .dark-container h2 {
+            color: white;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>INV Software Solutions - Logo Test</h1>
+
+    <div class="logo-container">
+        <h2>Light Background Logo</h2>
+        <img src="/assets/images/Logo/Logo.png" alt="INV Software Solutions" class="logo-img">
+        <p>This logo should appear on light backgrounds (header)</p>
+    </div>
+
+    <div class="dark-container">
+        <h2>Dark Background Logo</h2>
+        <img src="/assets/images/Logo/Logo.png" alt="INV Software Solutions" class="logo-img">
+        <p class="dark-text">This logo should appear on dark backgrounds (footer)</p>
+    </div>
+
+    <div class="logo-container">
+        <h2>Direct SVG Content Test</h2>
+        <svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="180" height="50" fill="#ffffff" stroke="#3B82F6" stroke-width="2" rx="5"/>
+            <rect x="8" y="8" width="34" height="34" fill="#3B82F6" rx="4"/>
+            <rect x="12" y="12" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="12" y="22" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="12" y="32" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="22" y="12" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="22" y="22" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="22" y="32" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="32" y="12" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="32" y="22" width="8" height="8" fill="#ffffff" rx="1"/>
+            <rect x="32" y="32" width="8" height="8" fill="#ffffff" rx="1"/>
+            <text x="52" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1F2937">INV</text>
+            <text x="52" y="35" font-family="Arial, sans-serif" font-size="12" font-weight="normal" fill="#6B7280">SOFTWARE</text>
+            <text x="52" y="45" font-family="Arial, sans-serif" font-size="8" font-weight="normal" fill="#9CA3AF">Solutions</text>
+        </svg>
+        <p>This is the inline SVG version - should always be visible</p>
+    </div>
+</body>
+</html>
