@@ -1,6 +1,6 @@
 <nav class="navbar">
   <div class="container-custom">
-    <div class="nav-container">
+    <div class="nav-container" (click)="onNavContainerClick($event)">
       <div class="nav-brand">
         <a href="/" class="nav-logo">
           <img src="/assets/images/Logo/Logo.png" alt="INV Software Solutions" class="logo">
@@ -12,11 +12,11 @@
       </div>
 
       <div class="nav-menu" [class.active]="isMobileMenuOpen">
-        <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-        <a routerLink="/services" class="nav-link" routerLinkActive="active">Services</a>
-        <a routerLink="/about" class="nav-link" routerLinkActive="active">About Us</a>
-        <a routerLink="/careers" class="nav-link" routerLinkActive="active">Careers</a>
-        <a routerLink="/contact" class="nav-link" routerLinkActive="active">Contact</a>
+        <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMobileMenu()">Home</a>
+        <a routerLink="/services" class="nav-link" routerLinkActive="active" (click)="closeMobileMenu()">Services</a>
+        <a routerLink="/about" class="nav-link" routerLinkActive="active" (click)="closeMobileMenu()">About Us</a>
+        <a routerLink="/careers" class="nav-link" routerLinkActive="active" (click)="closeMobileMenu()">Careers</a>
+        <a routerLink="/contact" class="nav-link" routerLinkActive="active" (click)="closeMobileMenu()">Contact</a>
       </div>
 
       <div class="nav-toggle" (click)="toggleMobileMenu()">
