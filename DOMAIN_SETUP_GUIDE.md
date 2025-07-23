@@ -11,10 +11,8 @@
 
 - **Company Name**: INV Software Solutions, LLC
 - **CEO**: Jay Pasala
-- **Phone**: (607) 331-8233
-- **Email**: <jaypas@invsoftwaresolutions.com>
+- **Email**: <info@invsoftwaresolutions.com>
 - **Website**: <https://www.invsoftwaresolutions.com>
-- **Address**: 2926 Fallscreek Ct, Pearland, TX 77584
 
 ## Project Structure
 
@@ -76,10 +74,10 @@ export const environment = {
 };
 ```
 
-### 5. Google Maps Configuration
+### 5. Contact Integration
 
-- Current iframe integration for address: 2926 Fallscreek Ct, Pearland, TX 77584
-- Consider upgrading to Google Maps API for better functionality
+- Email contact form integration with Formspree
+- Business information displayed across all pages
 
 ### 6. SEO Optimization
 
@@ -112,8 +110,7 @@ The following files contain business contact information:
 
 For technical support during domain setup:
 
-- Email: <jaypas@invsoftwaresolutions.com>
-- Phone: (607) 331-8233
+- Email: <info@invsoftwaresolutions.com>
 
 ---
 *Last Updated: Current Date*

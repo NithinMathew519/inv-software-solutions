@@ -11,21 +11,21 @@ import { CommonModule } from '@angular/common';
 export class AboutComponent {
   teamMembers = [
     {
-      name: 'John Smith',
+      name: 'Jay Pasala',
       position: 'CEO & Founder',
-      image: '/assets/images/team/john.jpg',
-      bio: 'With over 15 years of experience in software development and business strategy.'
+      image: '/assets/images/team/placeholder.svg',
+      bio: 'With over 15 years of experience in software development and business strategy, Jay leads INV Software Solutions with a vision for innovative technology solutions.'
     },
     {
       name: 'Sarah Johnson',
       position: 'CTO',
-      image: '/assets/images/team/sarah.jpg',
+      image: '/assets/images/team/placeholder.svg',
       bio: 'Technical leader with expertise in cloud architecture and modern web technologies.'
     },
     {
       name: 'Mike Chen',
       position: 'Lead Developer',
-      image: '/assets/images/team/mike.jpg',
+      image: '/assets/images/team/placeholder.svg',
       bio: 'Full-stack developer passionate about creating scalable and efficient solutions.'
     },
     {

@@ -1,3 +1,28 @@
+// Success Message
+.success-message {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  color: #155724;
+
+  h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  &.success-message-bottom {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
 // Contact Hero Section
 .contact-hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

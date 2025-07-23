@@ -13,14 +13,18 @@
       <!-- Contact Form -->
       <div class="contact-form-container">
         <h2>Get In Touch</h2>
-        <form class="contact-form" (ngSubmit)="onSubmit()" #contactFormRef="ngForm">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xjkoyjkz"
+          method="POST"
+          (ngSubmit)="onFormSubmit($event)"
+          #contactForm="ngForm">
           <div class="form-group">
             <label for="name">Full Name *</label>
             <input
               type="text"
               id="name"
               name="name"
-              [(ngModel)]="contactForm.name"
               required
               placeholder="Enter your full name"
             >
@@ -32,7 +36,6 @@
               type="email"
               id="email"
               name="email"
-              [(ngModel)]="contactForm.email"
               required
               placeholder="Enter your email address"
             >
@@ -45,7 +48,6 @@
                 type="text"
                 id="company"
                 name="company"
-                [(ngModel)]="contactForm.company"
                 placeholder="Enter your company name"
               >
             </div>
@@ -56,7 +58,6 @@
                 type="tel"
                 id="phone"
                 name="phone"
-                [(ngModel)]="contactForm.phone"
                 placeholder="Enter your phone number"
               >
             </div>
@@ -67,10 +68,15 @@
             <select
               id="service"
               name="service"
-              [(ngModel)]="contactForm.service"
             >
               <option value="">Select a service</option>
-              <option *ngFor="let service of services" [value]="service">{{ service }}</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile App Development">Mobile App Development</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Cloud Solutions">Cloud Solutions</option>
+              <option value="IT Consulting">IT Consulting</option>
+              <option value="Other">Other</option>
             </select>
           </div>
 
@@ -80,7 +86,6 @@
               type="text"
               id="subject"
               name="subject"
-              [(ngModel)]="contactForm.subject"
               required
               placeholder="Enter the subject of your inquiry"
             >
@@ -91,16 +96,25 @@
             <textarea
               id="message"
               name="message"
-              [(ngModel)]="contactForm.message"
               required
               rows="6"
               placeholder="Tell us about your project or inquiry..."
             ></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary" [disabled]="!contactFormRef.valid">
-            Send Message
+          <!-- Hidden field to help with form organization -->
+          <input type="hidden" name="_subject" value="New Contact Form Submission from INV Software Solutions Website">
+
+          <button type="submit" class="btn btn-primary" [disabled]="isSubmitting">
+            <span *ngIf="!isSubmitting">Send Message</span>
+            <span *ngIf="isSubmitting">Sending...</span>
           </button>
+
+          <!-- Success Message at bottom of form -->
+          <div *ngIf="showSuccessMessage" class="success-message success-message-bottom">
+            <h4>✅ Thanks!</h4>
+            <p>The form was submitted successfully. We'll get back to you soon!</p>
+          </div>
         </form>
       </div>
 
@@ -124,36 +138,6 @@
             <a href="#" class="social-link">Twitter</a>
             <a href="#" class="social-link">GitHub</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Map Section -->
-<section class="map-section">
-  <div class="container">
-    <h2>Our Location</h2>
-    <div class="map-container">
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.7879456789!2d-95.29876842398844!3d29.56372757568947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c0c123456789%3A0x123456789abcdef0!2s2926%20Fallscreek%20Ct%2C%20Pearland%2C%20TX%2077584!5e0!3m2!1sen!2sus!4v1642123456789!5m2!1sen!2sus"
-          width="100%"
-          height="400"
-          class="google-map"
-          title="INV Software Solutions Location"
-          allowfullscreen=""
-          loading="lazy">
-        </iframe>
-      </div>
-      <div class="location-info">
-        <h3>📍 INV Software Solutions, LLC</h3>
-        <p>2926 Fallscreek Ct<br>Pearland, TX 77584</p>
-        <p>Located in the heart of Pearland, Texas, we're easily accessible from Houston metropolitan area and surrounding communities.</p>
-        <div class="contact-details">
-          <p><strong>Phone:</strong> <a href="tel:+16073318233">(607) 331-8233</a></p>
-          <p><strong>Email:</strong> <a href="mailto:jaypas&#64;invsoftwaresolutions.com">jaypas&#64;invsoftwaresolutions.com</a></p>
-          <p><strong>Website:</strong> <a href="https://www.invsoftwaresolutions.com" target="_blank" rel="noopener noreferrer">www.invsoftwaresolutions.com</a></p>
         </div>
       </div>
     </div>
@@ -194,7 +178,7 @@
     <div class="cta-content">
       <h2>Ready to Start Your Project?</h2>
       <p>Contact us today for a free consultation and let's discuss how we can help you achieve your goals.</p>
-      <a href="tel:+16073318233" class="btn btn-primary">Call Now: (607) 331-8233</a>
+      <!-- <a href="mailto:info&#64;invsoftwaresolutions.com" class="btn btn-primary">Contact Us: info&#64;invsoftwaresolutions.com</a> -->
     </div>
   </div>
 </section>
